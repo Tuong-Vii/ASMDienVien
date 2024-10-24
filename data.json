@@ -1,0 +1,10 @@
+{
+    "Actor": [
+        { "id": "1", "ten": "Ngô Thanh Vân", "hinh": "images/NgoThanhVan.jpg" },
+        { "id": "2", "ten": "Trấn Thành", "hinh": "images/TranThanh.jpg" }
+    ],
+    "Movie": [
+        { "id": "1", "name": "Mùa hè năm ấy", "releaseDate": "2021-07" },
+        { "id": "2", "name": "Chuyện tình nơi xa", "releaseDate": "2022-03" }
+    ]
+}

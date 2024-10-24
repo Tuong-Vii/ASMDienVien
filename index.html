@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="css/css.css">
+</head>
+<body>
+    <header id="header"></header>
+    <nav id="menu">
+        <a href="#top">Trang chủ</a>
+        <a href="#listphim">Phim</a>
+        <a href="#listtoptrend">Thịnh hành</a>
+        <a href="#listdienvien">Diễn viên</a>
+    </nav>
+    <main>
+        <section id="listphim">
+            <h2>Danh sách phim</h2>
+            <div id="data"></div>
+        </section>
+        <section id="listdienvien">
+            <h2>Danh sách diễn viên</h2>
+            <div id="data"></div>
+        </section>
+        <section id="listnentang">
+            <h2>Các nền tảng xem phim</h2>
+            <div id="data"></div>
+        </section>
+        <section id="listtoptrend">
+            <h2>Danh sách thịnh hành</h2>
+            <div id="data"></div>
+        </section>
+    </main>
+    <footer>Họ tên sinh viên: Nguyễn Ngọc Tường Vi @2024</footer>
+</body>
+</html>
+
+<script type="module">
+   import { showlistphim, showlistdienvien, showlistnentang, showlistTopTrending } from './js/app.js';
+   
+   // Hiển thị danh sách phim
+   document.querySelector("#listphim #data").innerHTML = showlistphim();
+   
+   // Hiển thị danh sách diễn viên
+   document.querySelector("#listdienvien #data").innerHTML = showlistdienvien();
+   
+   // Hiển thị danh sách nền tảng xem phim
+   document.querySelector("#listnentang #data").innerHTML = showlistnentang();
+   
+   // Hiển thị danh sách thịnh hành
+   document.querySelector("#listtoptrend #data").innerHTML = await showlistTopTrending();
+</script>
