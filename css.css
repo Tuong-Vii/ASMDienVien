@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#header {
+    height: 90px;
+    background: lightgoldenrodyellow;
+    text-align: center;
+    padding: 20px 0;
+}
+
+#menu {
+    background: orange;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+#menu a {
+    font-size: 1.2em;
+    color: white;
+    margin: 0 10px;
+}
+
+#menu a:hover {
+    color: aqua;
+    text-decoration: underline;
+}
+
+#listphim {
+    background-color: lightcyan;
+    padding: 40px 0;
+}
+
+#listphim h2 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#listphim #data {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#listphim #data > div {
+    width: 30%;
+    border: 2px solid black;
+    margin: 15px 0.2%;
+    text-align: center;
+    font-size: 1.3em;
+    box-shadow: 2px 2px 3px lightseagreen;
+    border-radius: 5px;
+    padding: 20px;
+    line-height: 150%;
+}
+
+#listdienvien {
+    background-color: beige;
+    padding: 40px 0;
+}
+
+#listdienvien h2 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#listdienvien #data {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#listdienvien #data > div {
+    width: 30%;
+    border: 1px solid black;
+    margin: 0.5%;
+    text-align: center;
+    font-size: 1.3em;
+    padding: 10px;
+    line-height: 130%;
+}
+
+#listnentang {
+    background-color: lightcyan;
+    padding: 40px 0;
+}
+
+#listnentang h2 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#listnentang #data {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#listnentang #data > div {
+    width: 30%;
+    border: 1px solid black;
+    margin: 15px 0.5%;
+    text-align: center;
+    font-size: 1.3em;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px black;
+}
+
+#listnentang #data > div > img {
+    width: 50%;
+    height: 200px;
+}
+
+#listtoptrend {
+    background-color: beige;
+    padding: 40px 0;
+}
+
+#listtoptrend h2 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#listtoptrend #data {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#listtoptrend #data > div > img {
+    margin: 15px 0.5%;
+    text-align: center;
+    font-size: 1.3em;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    box-shadow: 2px 2px 2px black;
+}
+
+footer {
+    height: 60px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.5em;
+}
