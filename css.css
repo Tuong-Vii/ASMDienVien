@@ -13,6 +13,9 @@ html {
 }
 
 #header {
+    font-size: 50px; /* Tăng kích thước chữ */
+    font-weight: bold; /* In đậm chữ */
+    padding: 20px; /* Thêm khoảng cách phía trên và dưới */
     height: 90px;
     background: lightgoldenrodyellow;
     text-align: center;
@@ -27,12 +30,16 @@ html {
     position: sticky;
     top: 0;
     left: 0;
+    display: flex; /* Đặt display flex để sắp xếp các mục trong menu */
+    align-items: center;
+    
 }
 
 #menu a {
     font-size: 1.2em;
     color: white;
     margin: 0 10px;
+    text-decoration: none;
 }
 
 #menu a:hover {
@@ -40,6 +47,10 @@ html {
     text-decoration: underline;
 }
 
+/* Đẩy phần "Đăng nhập" về bên phải */
+#menu .right {
+    margin-left: auto;
+}
 #listphim {
     background-color: lightcyan;
     padding: 40px 0;
@@ -152,11 +163,62 @@ html {
 }
 
 footer {
-    height: 60px;
-    background-color: black;
+    background-color: rgb(29, 29, 29);
+    padding: 20px 0;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+}
+
+.footer-section h3 {
+    font-size: 18px;
     color: white;
-    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 5px 0;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: white
+    ;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer-bottom img {
+    margin: 0 10px;
+    width: 80px;
+}
+
+.footer-bottom p {
+    margin-top: 10px;
+    color: white;
+    font-size: 14px;
 }
